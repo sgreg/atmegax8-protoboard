@@ -11,3 +11,12 @@ The ISP connector is meant for ATmega48/88/168/328 series microcontrollers, I ac
 
 Repository contains KiCad schematics, PCB layout and Gerber files.
 Once I received the PCBs and verified they work and fit to the breadboard, it'll be shared on OSH Park.
+
+## Revision B
+
+Resized PCB and added a jumper to optionally route AVCC to VCC.
+
+It was nice to have each pin number added to the PCB in revision A, but the PCB ended up simply too large this way. Placed on a bradboard, it occupied three rows on each side, leaving onl two rows left for wires for each pin. To make matters worse, the additional PCB margin made only one single row really usable.
+
+Revision B squeezes it all more tight together and minimizes the PCB margin. The silk screen pin numbering had to be removed for this though.
+
