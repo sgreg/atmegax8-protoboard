@@ -28,14 +28,15 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:atmegax8-protoboard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ATmegaX8 Protoboard"
-Date "2016-03-08"
-Rev "A"
+Date "2016-05-05"
+Rev "B"
 Comp "Sven Gregori <svengregori@gmail.com>"
 Comment1 ""
 Comment2 ""
@@ -254,6 +255,8 @@ Text Label 7450 4750 0    60   ~ 0
 GND
 Text Label 7450 4850 0    60   ~ 0
 GND
+Wire Wire Line
+	3500 4700 3500 4600
 $Comp
 L PWR_FLAG #FLG03
 U 1 1 56DA230A
@@ -265,6 +268,19 @@ F 3 "" H 3500 2700 50  0000 C CNN
 	1    3500 2700
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3500 4700 3500 4600
+$Comp
+L JUMPER JP1
+U 1 1 572B519E
+P 6900 5700
+F 0 "JP1" H 6900 5850 50  0000 C CNN
+F 1 "JUMPER" H 6900 5620 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 6900 5700 50  0001 C CNN
+F 3 "" H 6900 5700 50  0000 C CNN
+	1    6900 5700
+	1    0    0    -1  
+$EndComp
+Text Label 6600 5700 2    60   ~ 0
+VCC
+Text Label 7200 5700 0    60   ~ 0
+AVCC
 $EndSCHEMATC
